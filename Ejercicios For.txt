@@ -1,0 +1,422 @@
+package for_1;
+import java.util.Scanner;
+/**
+ *
+ * @author CC3B
+ */
+public class For_1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
+        for(int num=1;num<=100;num++){
+            System.out.println(num);
+        }
+            
+    }
+    
+}
+
+package for_2;
+import java.util.Scanner;
+/**
+ *
+ * @author CC3B
+ */
+public class For_2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
+        for(int num=0;num<=100;num=num+2){
+            System.out.println(num);
+        }
+    }
+    
+}
+
+package for_3;
+import java.util.Scanner;
+/**
+ *
+ * @author CC3B
+ */
+public class For_3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
+        for(int num=5;num<=100;num=num+5){
+            System.out.println(num);
+        }
+    }
+    
+}
+
+package for_4;
+import java.util.Scanner;
+/**
+ *
+ * @author CC3B
+ */
+public class For_4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
+        int num;
+        System .out.println("Ingrese Numero");
+        num=sc.nextInt();
+        System .out.println("");
+        System .out.println("Inicio");
+        for( num=num;num<=500;num=num+2){       
+            System.out.println(num);
+        }
+    }
+    
+}
+
+package for_5;
+import java.util.Scanner;
+/**
+ *
+ * @author CC3B
+ */
+public class For_5 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
+        int tab;
+        System .out.println("Ingrese Numero de tabla");
+        tab=sc.nextInt();
+        System .out.println("");
+        for(int i=1;i<=10;i++){
+            for(int j=1j=10;j++){
+                
+            System.out.println(+tab+"x"+j"= "+i*j);
+           }
+        }
+    }
+    
+}
+
+package while_1;
+import java.util.Scanner;
+/**
+ *
+ * @author CC3B
+ */
+public class While_1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
+        int var=1;
+        while(var<=100){
+            System.out.println("interado "+ var+" veces");
+            System.out.print("");
+            var++;
+        }
+    }
+    
+}
+
+package while_2;
+import java.util.Scanner;
+
+/**
+ *
+ * @author CC3B
+ */
+public class While_2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic hereScanner sc=new Scanner(System.in);
+        int contador;
+        int fin;
+        Scanner readere=new Scanner(System.in);
+        System.out.println("Ingrese el valor inicial");
+        contador=readere.nextInt();
+         System.out.println("Ingrese el valor final");
+        fin=readere.nextInt();
+        while(contador<=fin){
+            System.out.println("Valor actual " + contador);
+            System.out.print("");
+            contador++;
+        }
+    }
+         
+}
+
+package while_3;
+import java.util.Scanner;
+/**
+ *
+ * @author CC3B
+ */
+public class While_3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int n;
+        int i=0;
+        Scanner readere=new Scanner(System.in);
+        System.out.println("Ingrese numero");
+        n=readere.nextInt();
+        while(i<=10){
+            System.out.println(n+"x" +i+"= "+n*i);
+            System.out.print("");
+            i++;
+        }
+    }
+    
+}
+
+package tarea_if;
+import java.util.*;
+
+/**
+ *
+ * @author Marlene Aldana
+ */
+public class Tarea_if {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int n1;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("-----------------"); 
+        System.out.println("INTRODUZCA NOTA");
+        n1=sc.nextInt();
+        if(n1>=9){
+            System.out.println("A");
+        }
+        else if(n1>=8&&n1<9){
+            System.out.println("B");
+        }
+        if(n1>=7&&n1<8){
+           System.out.println("C"); 
+        }
+        else if(n1>=6&&n1<7){
+            System.out.println("D");
+        }
+    }
+    
+}
+
+package tarea1;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Marlene Aldana
+ */
+public class Tarea1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner teclado=new Scanner(System.in);
+        String num;
+        int n;
+        int tam=0;
+       
+	
+	num=JOptionPane.showInputDialog(null,"Introduce el total de números");
+	n=Integer.parseInt(num);
+	for(int i=0;i<n;i++){
+            tam=Integer.parseInt(JOptionPane.showInputDialog(null,"Introduce el total de números "+(i+1)));
+            }
+       
+	if(n==tam)
+            JOptionPane.showMessageDialog(null,"Son iguales");
+	else
+            JOptionPane.showMessageDialog(null,"No son iguales"); 
+        
+        }
+    }    
+    
+package ejercicio3_guia;
+import java.util.*;
+/**
+ *
+ * @author CC3B
+ */
+public class Ejercicio3_guia {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        double n1,n2,n3,n4,n5;
+         Scanner sc=new Scanner(System.in);
+          System.out.println("Ingrese Nota 1");
+          n1= sc.nextDouble();
+          System.out.println("Ingrese Nota 2");
+          n2= sc.nextDouble();
+          System.out.println("Ingrese Nota 3");
+          n3= sc.nextDouble();
+          System.out.println("Ingrese Nota 4");
+          n4= sc.nextDouble();
+          System.out.println("Ingrese Nota 5");
+          n5= sc.nextDouble();
+       if ((n1>n2&&n1>n3)&&(n1>n4&&n1>n5)){
+          System.out.printf("La nota mayor es: "+ n1 );
+
+       }else if ((n2>n1&&n2>n3)&&(n2>n4&&n2>n5)){
+          System.out.printf("La nota mayor es: "+ n2);
+
+       }else if((n3>n1&&n3>n2)&&(n3>n4&&n3>n5)){
+          System.out.printf("La nota mayor es: "+ n3);
+
+       }else if ((n5>n1&&n5>n2)&&(n5>n3&&n5>n4)){
+          System.out.printf("La nota mayor es: "+ n4);
+
+       }else if ((n4>n5&&n4>n2)&&(n4>n3&&n4>n5)){
+          System.out.printf("La nota mayor es: "+ n5);
+    }
+  }   
+}
+
+
+package ejercicio2_guia;
+import java.util.*;
+/**
+ *
+ * @author CC3B
+ */
+public class Ejercicio2_guia {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int horastrabajadas,extras,total;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Ingrese el numero de horas trabajadas");
+        horastrabajadas=sc.nextInt();
+        if(horastrabajadas<=40){           
+        total=horastrabajadas*10;
+        System.out.println("Su salario es de: $"+total);       
+        }
+         else{                
+          extras=horastrabajadas-40;
+           total=(extras*20)+(40*15);
+           System.out.println("Su salario es de: $"+total);
+         }
+    }
+    
+}
+
+
+package ejercicio1_guia;
+import java.util.*;
+/**
+ *
+ * @author CC3B
+ */
+public class Ejercicio1_guia {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here 
+         double precio;
+         double total;
+         double porcentaje=0.20;
+         double descuento;
+         Scanner sc=new Scanner(System.in);
+         System.out.println("Bienvenidos a la Zapateria UMA");
+         System.out.println("Precio de los zapatos");
+         precio= sc.nextDouble();
+         
+         descuento=(precio*porcentaje);
+         total=(precio-descuento);
+         
+         if(precio>=150){
+           System.out.println("Usted tiene un descuento del 20%"); 
+           System.out.println("Gracias por su compra");
+           System.out.println("El descuento es de $"+descuento);
+            System.out.println("Su total a pagar es de $"+total);
+         }
+         else if(precio<150){
+           System.out.println("Gracias por su compra");    
+             
+         }
+    }
+    
+}
+
+package lab1.pkg2;
+import java.util.*;
+/**
+ *
+ * @author CC3B
+ */
+public class Lab12 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner sc=new Scanner(System.in);
+        int n1,n2,n3;
+        int sum,menor=0,mayor=0;
+        System.out.println("Bienvenidos, Ingrese Tres Numeros");
+         System.out.println("Ingrese El Primer Numero");
+         n1= sc.nextInt();
+         System.out.println("Ingrese El Segundo Numero");
+         n2= sc.nextInt();
+         System.out.println("Ingrese El Tercer Numero");
+         n3= sc.nextInt();
+         sum=(n1+n2+n3);
+         System.out.println("Los Numeros Ingresados Son: " + n1 + n2 + n3);
+         System.out.println("La Suma De Los Tres Numeros");
+         System.out.println("Resultado "+ sum);
+                                 
+         if(n1>0&&n2>0&&n3>0){
+             System.out.println("Los numeros son meyores "+n1+n2+n3);
+             menor++;
+             
+         }
+         if(n1<5&&n2<5&&n3<5){
+             System.out.println("Los numeros son menores a 5 "+n1+n2+n3);
+             
+         }
+    }
+    
+}
